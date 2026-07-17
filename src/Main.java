@@ -40,12 +40,14 @@ public class App {
             System.out.println("4. Exit");
             System.out.print("Choice: ");
             int choice = sc.nextInt();
+            sc.nextLine();                                   
 
             if (choice == 1) {
                 System.out.print("Name: ");
-                String name = sc.next();
+                String name = sc.nextLine();                 
                 System.out.print("Grade (0-100): ");
                 double grade = sc.nextDouble();
+                sc.nextLine();                                 
 
                 roster.add(new Student(name, grade));
                 System.out.println("Added " + name + "!");
