@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class App {
 
     static ArrayList<Double> cutoffs = new ArrayList<>();
     static ArrayList<Character> letters = new ArrayList<>();
@@ -33,8 +33,8 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            System.out.println("\n===== GRADE TRACKER =====");
-            System.out.println("1. Add student");
+            System.out.println("\n Grade Tracker");
+            System.out.println("1. Add  new student");
             System.out.println("2. View all students");
             System.out.println("3. Class average");
             System.out.println("4. Exit");
@@ -73,7 +73,7 @@ public class Main {
 
             } else if (choice == 4) {
                 running = false;
-                System.out.println("Goodbye!");
+                System.out.println("Bye");
 
             } else {
                 System.out.println("Invalid choice. Pick 1-4.");
