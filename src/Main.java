@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Vehicle> vehicles = new ArrayList<>();
+        ArrayList<vehicle> vehicles = new ArrayList<>();
         Scanner input = new Scanner(System.in);
         int choice = 0;
 
@@ -27,7 +27,7 @@ public class Main {
                 System.out.print("Number of doors: ");
                 int doors = input.nextInt();
 
-                vehicles.add(new Car(brand, year, doors));
+                vehicles.add(new car(brand, year, doors));
                 System.out.println(">> Car added!");
             }
             else if (choice == 2) {
@@ -38,7 +38,7 @@ public class Main {
                 System.out.print("Has sidecar? (true/false): ");
                 boolean sidecar = input.nextBoolean();
 
-                vehicles.add(new Motorcycle(brand, year, sidecar));
+                vehicles.add(new motor(brand, year, sidecar));
                 System.out.println(">> Motorcycle added!");
             }
             else if (choice == 3) {
